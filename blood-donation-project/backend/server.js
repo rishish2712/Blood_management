@@ -9,7 +9,7 @@ const app = express();
 app.use(cors()); // Enable CORS
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://<UserName>:<Password>@cluster0.4onb8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://<UserName>:<Password>@<Link>', { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
     app.listen(5000, () => {
         console.log('Server is running on http://localhost:5000');
